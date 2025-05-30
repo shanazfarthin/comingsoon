@@ -90,6 +90,17 @@
     @keyframes blink {
       50% { border-color: transparent; }
     }
+    .highlight-blink {
+  font-weight: bold;
+  color: #d84315;
+  animation: blink-highlight 2s infinite;
+}
+
+@keyframes blink-highlight {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
   </style>
 </head>
 <body>
@@ -97,9 +108,10 @@
     <img src="logo.svg" alt="Smart Little Me Logo" class="logo" />
 
     <h1>🌈 Smart Little Me</h1>
-    <h2 class="typing delay0">Fun. Learning. Together. 🎉</h2>
-    <p class="typing delay1">A joyful space where kids grow smarter every tap at a time 🧠✨</p>
-    <p class="typing delay2">🚀 We’re getting ready to launch — stay tuned!</p>
+    <h2 class="typing delay0">Fun. Learning. Together. </h2>
+    <p class="typing delay1"><b>A joyful space where kids grow smarter every tap at a time </b></p>
+   <p class="typing delay2">🚀 We’re getting ready to launch — <span class="highlight-blink">stay tuned!</span></p>
+
 
     <div class="links">
       <a href="tel:+94770651625">📞 Call Us</a>
